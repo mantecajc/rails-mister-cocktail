@@ -1,7 +1,9 @@
-<h1>Cocktails</h1>
-<%= link_to "Add cocktail", new_cocktail_path %>
-<ul>
+<div class="container">
   <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+    <div class="row">
+		  <div class="col-sm-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/2000x1000?cocktails)">
+	      <%= link_to cocktail.name, cocktail_path(cocktail), class: "card-category" %>
+		  </div>
+		</div>
   <% end %>
-</ul>
+</div>
