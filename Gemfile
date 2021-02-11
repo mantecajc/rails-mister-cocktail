@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
+# Needed for seeds
+gem 'faker', '~> 2.16'
+
 # Front gems
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
