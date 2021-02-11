@@ -24,10 +24,4 @@ puts "Creating cocktails..."
   Cocktail.create(name: Faker::Coffee.blend_name)
 end
 
-puts "Creating doses..."
-
-10.times do
-  Dose.create(description: rand(1..40), ingredient_id: rand(1..3), cocktail_id: rand(1..20))
-end
-
 puts "Finished!"
