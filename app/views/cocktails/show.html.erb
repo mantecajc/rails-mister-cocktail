@@ -6,6 +6,7 @@
     <%= ingredient.name %>
     <% ingredient.doses.each do |dose| %>
       <%= dose.description %>
+      <%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: "Are you sure?"} %>
     <% end %>
   </div>
 <% end %>
