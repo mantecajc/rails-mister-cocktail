@@ -10,3 +10,12 @@
   background: #1BCB7F;
   color: white;
 }
+
+#btn-delete {
+  color: #337AB7;
+  opacity: 1;
+  &:hover {
+  	opacity: 0.8;
+  	color: black;
+  }
+}
