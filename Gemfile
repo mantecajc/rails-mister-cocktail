@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
+# Needed for photos cloudinary
+gem 'cloudinary', '~> 1.16.0'
+
 # Needed for seeds
 gem 'faker', '~> 2.16'
 
