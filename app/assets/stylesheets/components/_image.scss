@@ -1,3 +1,7 @@
 .photo-show-circle {
   border-radius: 50%;
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
+  box-shadow: 3px 6px 30px rgba(0, 0, 0, 0.1);
 }
